@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ending!</title>
+    <link rel="shortcut icon" href="https://img.icons8.com/emoji/48/4a90e2/end-arrow-emoji.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/end.css">
+</head>
+
+<body>
+
+    <!-- Heading -->
+
+    <h1 class="ending-head">
+        Now END!!
+    </h1>
+    <!-- Audio -->
+
+    <audio id="audio" autoplay>
+        <source src="../music/Ballpoint - Bathtub (mp3cut.net).mp3" type="audio/mpeg">
+    </audio>
+    <button id="playPauseBTN" onclick="playPause()">Play ►</button>
+    <div class="stop">
+        <button id="stopBtn" onclick="stop()">Stop ▋</button>
+    </div>
+
+    <p class="ending-para">
+        <i>-It feels good to make these types of web pages and I got to know many new things while making this project
+            and Why not this is your B'day👹😷!</i>
+    </p>
+
+    <!-- Button -->
+
+    <button class="next">
+        <a href="../index.html" id="go"><i>Skip to start</i></a>
+    </button>
+
+    <!-- JavaScript -->
+
+    <script>
+        let audio = document.getElementById('audio');
+        let playPauseBTN = document.getElementById('playPauseBTN');
+        let count = 0;
+
+        function playPause() {
+            if (count == 0) {
+                count = 1;
+                audio.play();
+                playPauseBTN.innerHTML = "Pause ⏸";
+            } else {
+                count = 0;
+                audio.pause();
+                playPauseBTN.innerHTML = "Play ►";
+            }
+
+        }
+
+        function stop() {
+            playPause()
+            audio.pause();
+            audio.currentTime = 0;
+            playPauseBTN.innerHTML = "Play ►";
+        }
+    </script>
+</body>
+
+</html>

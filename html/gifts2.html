@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gift Section_food</title>
+    <link rel="stylesheet" href="../css/gifts2.css">
+    <link rel="shortcut icon" href="https://img.icons8.com/doodle/48/000000/sunny-side-up-eggs.png" type="image/x-icon">
+</head>
+
+<body>
+    <h1 class="food-heading">
+        Food gifts👹👹
+    </h1>
+
+    <!-- Audio -->
+
+    <audio id="audio" autoplay>
+        <source src="../music/Calvin-Harris-The-Weeknd-Over-Now (mp3cut (mp3cut.net).mp3" type="audio/mpeg">
+    </audio>
+    <button id="playPauseBTN" onclick="playPause()">Play ►</button>  
+    <div class="stop">
+        <button id="stopBtn" onclick="stop()">Stop ▋</button>
+    </div>
+
+    <!-- Gift Box -->
+
+    <div class="grid-box">
+        <div class="each-gift-box">
+            <img src="../img/food/Tandoori_chicken_laccha_piyaz1_.jpg" alt="Tandoori_chicken" class="animate-y"
+                width="300px" height="200px">
+            <div>Tandoori-chicken</div>
+        </div>
+        <div class="each-gift-box">
+            <img src="../img/food/grilled-tandoori-chicken-12.jpg" alt="grilled-tandoori-chicken" class="animate-x"
+                width="300px" height="200px">
+            <div>grilled one</div>
+        </div>
+        <div class="each-gift-box">
+            <img src="../img/food/full-roasted.jpg" alt="roasted" class="animate-y" width="300px" height="200px">
+            <div>roasted-chicken</div>
+        </div>
+        <div class="each-gift-box">
+            <img src="../img/food/rsz_chicken_curry_cut.jpg" alt="flesh" class="animate-x" width="300px" height="200px">
+            <div>😷</div>
+        </div>
+        <div class="each-gift-box">
+            <img src="../img/food/Paneer-Tikka-1.jpg" alt="Paneer" class="animate-y" width="300px" height="200px">
+            <div>Paneeeer</div>
+        </div>
+        <div class="each-gift-box">
+            <img src="../img/food/Achari-paneer-tikka-recipe-7.jpg" alt="tikka" class="animate-x" width="300px"
+                height="200px">
+            <div>Another one</div>
+        </div>
+        <div class="each-gift-box">
+            <img src="../img/food/homemade-spicy-roasted-fish-traditional-cooking-recipes-W39T5K.jpg" alt="roasted fish"
+                class="animate-y" width="300px" height="200px">
+            <div>ROasted fish</div>
+        </div>
+        <div class="each-gift-box">
+            <img src="../img/food/Tuna-Nigiri-thumbnail.jpg" alt="Tuna Sushi" class="animate-x" width="300px"
+                height="200px">
+            <div>Tuna-sushi</div>
+        </div>
+        <div class="each-gift-box">
+            <img src="../img/food/tuna.jpg" alt="Tuna" class="animate-y" width="300px" height="200px">
+            <div>Another one</div>
+        </div>
+        <div class="each-gift-box">
+            <img src="../img/food/spicy-tuna-roll-005.jpg" alt="spicy-tuna" class="animate-x" width="300px"
+                height="200px">
+            <div>Spicy-tuna</div>
+        </div>
+        <div class="each-gift-box">
+            <img src="../img/food/Spicy-Tuna-Roll-thumbnail.jpg" alt="" class="animate-y" width="300px" height="200px">
+            <div>Another one</div>
+        </div>
+        <div class="each-gift-box">
+            <img src="../img/food/tonkatsu.jpg" alt="tonkatsu" class="animate-x" width="300px" height="200px">
+            <div>tonkatsu</div>
+        </div>
+        <div class="each-gift-box">
+            <img src="../img/food/3.-Packed-meals-1.jpg" alt="Packed-meals" class="animate-y" width="300px"
+                height="200px">
+            <div>Combini food</div>
+        </div>
+        <div class="each-gift-box">
+            <img src="../img/food/maxresdefault.jpg" alt="manchurian" class="animate-x" width="300px" height="200px">
+            <div>manchurian</div>
+        </div>
+        <div class="each-gift-box">
+            <img src="../img/food/Veg-Manchurian-Dry-Recipe-Photo..jpg" alt="Veg-Manchurian-Dry" class="animate-y"
+                width="300px" height="200px">
+            <div>Veg-Manchurian</div>
+        </div>
+        <div class="each-gift-box">
+            <img src="../img/food/boiled egg.jpg" alt="boiled egg" class="animate-x" width="300px" height="200px">
+            <div>Boiled egg (For height)</div>
+        </div>
+        <div class="each-gift-box">
+            <img src="../img/food/Rajma-Masala.jpg" alt="rajma" class="animate-y" width="300px" height="200px">
+            <div>Rajma😎</div>
+        </div>
+        <div class="each-gift-box">
+            <img src="../img/food/Green-bean-lime-633x326.jpg" alt="beans" class="animate-x" width="300px"
+                height="200px">
+            <div>Beans (For height)</div>
+        </div>
+        <div class="each-gift-box">
+            <img src="../img/food/spinach-leaves.jpg" alt="spinach" class="animate-y" width="300px" height="200px">
+            <div>Spinach (For height)</div>
+        </div>
+        <div class="each-gift-box">
+            <img src="../img/food/202770-bitter-gourd.jpg" alt="bitter-gourd" class="animate-x" width="300px"
+                height="200px">
+            <div>biiter-gourd (For height)</div>
+        </div>
+    </div>
+
+    <!-- Button -->
+
+    <button class="next">
+        <a href="../html/end.html" id="go">Next-</a>
+    </button>
+    <script>
+        let audio = document.getElementById('audio');
+        let playPauseBTN = document.getElementById('playPauseBTN');
+        let count = 0;
+
+        function playPause() {
+            if (count == 0) {
+                count = 1;
+                audio.play();
+                playPauseBTN.innerHTML = "Pause ⏸";
+            } else {
+                count = 0;
+                audio.pause();
+                playPauseBTN.innerHTML = "Play ►";
+            }
+
+        }
+
+        function stop() {
+            playPause()
+            audio.pause();
+            audio.currentTime = 0;
+            playPauseBTN.innerHTML = "Play ►";
+        }
+    </script>
+</body>
+
+</html>
